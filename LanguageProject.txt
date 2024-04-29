@@ -1,0 +1,14 @@
+buildfile	C:\Eric\Main\Language\BuildProj.bat
+executablefile	C:\Eric\Main\Language\RunApp.bat
+projectdirectory	\Eric\Main\Language
+recentfile1	C:\Eric\Main\Language\MainApp.java
+recentfile2	C:\Eric\Main\Language\HtmlFile.java
+recentfile3	C:\Eric\Main\Language\WebSites.java
+recentfile10	\Eric\Main\Language\StrA.java
+recentfile4	C:\Eric\Main\Language\URLParse.java
+recentfile11	\Eric\Main\Language\URLFile.java
+recentfile5	C:\Eric\Main\Language\URLClient.java
+recentfile6	C:\Eric\Main\Language\URLFileDictionary.java
+recentfile7	C:\Eric\Main\Language\AnalyzeNewLinks.java
+recentfile8	\Eric\Main\Docs\Notes.txt
+recentfile9	\Eric\Main\Language\MainWindow.java
