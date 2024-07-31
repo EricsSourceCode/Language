@@ -1,6 +1,7 @@
 // Copyright Eric Chauvin 2020 - 2024.
 
 
+
 // This is licensed under the GNU General
 // Public License (GPL).  It is the
 // same license that Linux has.
@@ -42,7 +43,7 @@ import java.io.IOException;
 class MainApp implements Runnable, Serializable
   {
   public static final String versionDate =
-                              "4/29/2024";
+                              "7/31/2024";
 
   public static final long serialVersionUID = 1;
 

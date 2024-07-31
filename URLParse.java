@@ -414,6 +414,9 @@ public class URLParse
          "artificialintelligence-news.com/" )))
       return true;
 
+    if( link.containsStrA( new
+           StrA( ".coloradopolitics.com/" )))
+      return true;
 
     if( link.containsStrA( new StrA( "durangoherald.com/" )))
       return true;

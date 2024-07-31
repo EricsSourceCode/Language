@@ -329,14 +329,14 @@ public final class MainWindow extends
     menuItem.setFont( mainFont );
     fileMenu.add( menuItem );
 
-    menuItem = new JMenuItem( "Analyze Spanish" );
-    menuItem.setMnemonic( KeyEvent.VK_S );
-    menuItem.setActionCommand( "FileAnalyzeSpanish" );
-    menuItem.addActionListener( this );
-    menuItem.setForeground( Color.white );
-    menuItem.setBackground( Color.black );
-    menuItem.setFont( mainFont );
-    fileMenu.add( menuItem );
+    // menuItem = new JMenuItem( "Analyze Spanish" );
+    // menuItem.setMnemonic( KeyEvent.VK_S );
+    // menuItem.setActionCommand( "FileAnalyzeSpanish" );
+    // menuItem.addActionListener( this );
+    // menuItem.setForeground( Color.white );
+    // menuItem.setBackground( Color.black );
+    // menuItem.setFont( mainFont );
+    // fileMenu.add( menuItem );
 
     menuItem = new JMenuItem( "Cancel" );
     menuItem.setMnemonic( KeyEvent.VK_C );

@@ -8,6 +8,13 @@
 // https://www.gnu.org/licenses/gpl-3.0.html
 
 
+
+
+    // addEmptyFilesToFifo();
+
+
+
+
 import javax.swing.Timer;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -253,15 +260,6 @@ public class WebSites implements ActionListener,
     // urlFifo.setValue( new StrA(
     //              "https://llvm.org/" ));
 
-    // urlFifo.setValue( new StrA(
-       // "https://www.radiationnetwork.com/" ));
-
-    // urlFifo.setValue( new StrA(
-       // "https://www.mineralab.com/" ));
-
-    // urlFifo.setValue( new StrA(
-      // "https://www.mineralab.net/" ));
-
     // White Mountain Independent news.
     // urlFifo.setValue( new StrA(
        // "https://www.wmicentral.com/" ));
@@ -269,8 +267,8 @@ public class WebSites implements ActionListener,
     urlFifo.setValue( new StrA(
       "https://krebsonsecurity.com/" ));
 
-    urlFifo.setValue( new StrA(
-      "https://blog.cryptographyengineering.com/" ));
+    // urlFifo.setValue( new StrA(
+      // "https://blog.cryptographyengineering.com/" ));
 
     urlFifo.setValue( new StrA(
        "https://blogs.imf.org/" ));
@@ -278,15 +276,15 @@ public class WebSites implements ActionListener,
     urlFifo.setValue( new StrA(
   "https://libertystreeteconomics.newyorkfed.org/" ));
 
-    urlFifo.setValue( new StrA(
-      "https://www.iacr.org/news/" ));
+    // urlFifo.setValue( new StrA(
+      // "https://www.iacr.org/news/" ));
 
     urlFifo.setValue( new StrA(
       "https://www.schneier.com/" ));
 
-  urlFifo.setValue( new StrA(
-    "https://www.openssl.org/blog/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  //  "https://www.openssl.org/blog/"
+  //                             ));
 
   urlFifo.setValue( new StrA(
     "https://www.openssl.org/news/vulnerabilities.html"
@@ -324,30 +322,30 @@ public class WebSites implements ActionListener,
     // "https://www.theflume.com/"
      //                          ));
 
-  urlFifo.setValue( new StrA(
-  "https://coloradomtn.edu/campuses/leadville/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://coloradomtn.edu/campuses/leadville/"
+  //                             ));
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/campuses/leadville/programs/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/campuses/leadville/programs/"
+    //                           ));
 
-  urlFifo.setValue( new StrA(
-  "https://coloradomtn.edu/campuses/leadville/classes/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://coloradomtn.edu/campuses/leadville/classes/"
+  //                             ));
 
-  urlFifo.setValue( new StrA(
-  "https://coloradomtn.edu/campuses/leadville/faculty-staff/"
-                               ));
+  // urlFifo.setValue( new StrA(
+  // "https://coloradomtn.edu/campuses/leadville/faculty-staff/"
+   //                            ));
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/2/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/2/"
+  //                             ));
 
 
-  urlFifo.setValue( new StrA(
- "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/3/"
-                               ));
+  // urlFifo.setValue( new StrA(
+ // "https://coloradomtn.edu/campuses/leadville/faculty-staff/page/3/"
+  //                             ));
 
   // Four bytes problem?
   // urlFifo.setValue( new StrA(
@@ -393,13 +391,17 @@ public class WebSites implements ActionListener,
   "https://research.stlouisfed.org/publications/page1-econ/"
                                ));
 
-
+  // Error 403.
   // urlFifo.setValue( new StrA(
-  // "https://www.politico.com/"
-  //                             ));
+   // "https://www.politico.com/"
+   //                            ));
 
   urlFifo.setValue( new StrA(
   "https://www.artificialintelligence-news.com/"
+                               ));
+
+  urlFifo.setValue( new StrA(
+    "https://www.coloradopolitics.com/"
                                ));
 
 
@@ -407,8 +409,8 @@ public class WebSites implements ActionListener,
     "https://www.durangoherald.com/categories/local-news/"
                                ));
 
-  // urlFifo.setValue( new StrA(
-     // "https://www.durangoherald.com/" ));
+  urlFifo.setValue( new StrA(
+     "https://www.durangoherald.com/" ));
 
 
   // http 403 forbidden.
@@ -438,6 +440,7 @@ public class WebSites implements ActionListener,
 
     // urlFifo.setValue( new StrA(
        //           "https://www.milenio.com/" ));
+
 
     // addEmptyFilesToFifo();
     }
@@ -472,7 +475,7 @@ public class WebSites implements ActionListener,
 
         howMany++;
         // 3 seconds times 100 = 300 seconds. 5 Minutes.
-        if( howMany > 10000 )
+        if( howMany > 10 )
           break;
 
         mApp.showStatusAsync( "\nAdding to Fifo: (" +
@@ -488,8 +491,16 @@ public class WebSites implements ActionListener,
 
   private boolean isGoodFullFile( StrA in )
     {
+    if( in.containsStrA( new
+         StrA( ".coloradopolitics.com/" )))
+      return true;
+
+    return false;
+
+/*
     if( in.containsStrA( new StrA(
                  ".msnbc.com/" )))
+      return true;
 
     if( in.containsStrA( new StrA(
                       "wmicentral.com" )))
@@ -512,6 +523,7 @@ public class WebSites implements ActionListener,
       return false;
 
     return true;
+*/
     }
 
 
