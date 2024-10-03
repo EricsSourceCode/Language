@@ -311,6 +311,21 @@ public class URLParse
   private boolean hasValidDomain( StrA link )
     {
     if( link.containsStrA( new StrA(
+   "www.ans.org/news/source-nuclearnews/"
+                                      )))
+      return true;
+
+    if( link.containsStrA( new StrA(
+      "www.world-nuclear-news.org/" )))
+      return true;
+
+    if( link.containsStrA( new StrA(
+      "www.enerdata.net/" )))
+      return true;
+
+
+
+    if( link.containsStrA( new StrA(
             ".msnbc.com/" )))
       return true;
 

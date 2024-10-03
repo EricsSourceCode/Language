@@ -406,6 +406,24 @@ public class WebSites implements ActionListener,
 
 
   urlFifo.setValue( new StrA(
+   "https://www.ans.org/news/source-nuclearnews/"
+                               ));
+
+  urlFifo.setValue( new StrA(
+      "https://www.world-nuclear-news.org/"
+                               ));
+
+  urlFifo.setValue( new StrA(
+      "https://www.enerdata.net/"
+                               ));
+
+  urlFifo.setValue( new StrA(
+  "https://www.enerdata.net/publications/daily-energy-news/"
+                               ));
+
+
+
+  urlFifo.setValue( new StrA(
     "https://www.durangoherald.com/categories/local-news/"
                                ));
 
